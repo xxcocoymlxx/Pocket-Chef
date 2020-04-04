@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".CookBookActivity">
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Image for Cookbook Title (Centered) -->
+        <ImageView
+            android:id="@+id/cookbook_title"
+            android:layout_width="270dp"
+            android:layout_height="120dp"
+            android:background="@drawable/img_cookbook_title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"/>
+
+        <!-- List of Recipes  -->
+        <ListView
+            android:id="@+id/recipeList"
+            android:layout_width="390dp"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/cookbook_title"
+            android:layout_above="@+id/navBar"
+            android:layout_marginBottom="5dp"/>
+
+        <!-- BOTTOM NAVIGATION BAR -->
+        <FrameLayout
+            android:id="@+id/navBar"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_alignParentBottom="true">
+            <!-- Main content -->
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                app:itemIconSize="30dp"
+                android:id="@+id/bottom_navigation"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_gravity="bottom"
+                android:background="#4d4d4d"
+                app:itemIconTint="#ffffff"
+                app:itemTextColor="#ffffff"
+                app:labelVisibilityMode="unlabeled"
+                app:menu="@menu/bottom_navigation_menu" />
+        </FrameLayout>
+
+    </RelativeLayout>
+</layout>

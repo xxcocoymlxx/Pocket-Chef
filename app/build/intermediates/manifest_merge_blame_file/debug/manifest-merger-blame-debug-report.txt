@@ -1,0 +1,142 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.lions.cookbook"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="23"
+8-->/Users/CYANG/Desktop/project-lions/Cookbook/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="28" />
+9-->/Users/CYANG/Desktop/project-lions/Cookbook/app/src/main/AndroidManifest.xml
+10
+11    <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
+12    <!-- <uses-sdk android:minSdkVersion="14"/> -->
+13    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+13-->[com.google.firebase:firebase-database:19.2.1] /Users/CYANG/.gradle/caches/transforms-2/files-2.1/3bb9fab9565f3c13da1b0de3227d5105/firebase-database-19.2.1/AndroidManifest.xml:25:5-79
+13-->[com.google.firebase:firebase-database:19.2.1] /Users/CYANG/.gradle/caches/transforms-2/files-2.1/3bb9fab9565f3c13da1b0de3227d5105/firebase-database-19.2.1/AndroidManifest.xml:25:22-76
+14    <uses-permission android:name="android.permission.INTERNET" />
+14-->[com.google.firebase:firebase-database:19.2.1] /Users/CYANG/.gradle/caches/transforms-2/files-2.1/3bb9fab9565f3c13da1b0de3227d5105/firebase-database-19.2.1/AndroidManifest.xml:26:5-67
+14-->[com.google.firebase:firebase-database:19.2.1] /Users/CYANG/.gradle/caches/transforms-2/files-2.1/3bb9fab9565f3c13da1b0de3227d5105/firebase-database-19.2.1/AndroidManifest.xml:26:22-64
+15
+16    <application
+16-->/Users/CYANG/Desktop/project-lions/Cookbook/app/src/main/AndroidManifest.xml:5:5-28:19
+17        android:allowBackup="true"
+17-->/Users/CYANG/Desktop/project-lions/Cookbook/app/src/main/AndroidManifest.xml:6:9-35
+18        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+18-->[androidx.core:core:1.1.0-rc03] /Users/CYANG/.gradle/caches/transforms-2/files-2.1/c646d58a00d369bdf0998485a68985b0/core-1.1.0-rc03/AndroidManifest.xml:24:18-86
+19        android:debuggable="true"
+20        android:icon="@mipmap/ic_launcher"
+20-->/Users/CYANG/Desktop/project-lions/Cookbook/app/src/main/AndroidManifest.xml:7:9-43
+21        android:label="@string/app_name"
+21-->/Users/CYANG/Desktop/project-lions/Cookbook/app/src/main/AndroidManifest.xml:8:9-41
+22        android:roundIcon="@mipmap/ic_launcher_round"
+22-->/Users/CYANG/Desktop/project-lions/Cookbook/app/src/main/AndroidManifest.xml:9:9-54
+23        android:supportsRtl="true"
+23-->/Users/CYANG/Desktop/project-lions/Cookbook/app/src/main/AndroidManifest.xml:10:9-35
+24        android:testOnly="true"
+25        android:theme="@style/AppTheme" >
+25-->/Users/CYANG/Desktop/project-lions/Cookbook/app/src/main/AndroidManifest.xml:11:9-40
+26        <activity android:name="com.lions.cookbook.PrivateUserProfileActivity" />
+26-->/Users/CYANG/Desktop/project-lions/Cookbook/app/src/main/AndroidManifest.xml:12:9-73
+26-->/Users/CYANG/Desktop/project-lions/Cookbook/app/src/main/AndroidManifest.xml:12:19-61
+27        <activity android:name="com.lions.cookbook.LoginActivity" >
+27-->/Users/CYANG/Desktop/project-lions/Cookbook/app/src/main/AndroidManifest.xml:13:9-19:20
+27-->/Users/CYANG/Desktop/project-lions/Cookbook/app/src/main/AndroidManifest.xml:13:19-48
+28            <intent-filter>
+28-->/Users/CYANG/Desktop/project-lions/Cookbook/app/src/main/AndroidManifest.xml:14:13-18:29
+29                <action android:name="android.intent.action.MAIN" />
+29-->/Users/CYANG/Desktop/project-lions/Cookbook/app/src/main/AndroidManifest.xml:15:17-69
+29-->/Users/CYANG/Desktop/project-lions/Cookbook/app/src/main/AndroidManifest.xml:15:25-66
+30
+31                <category android:name="android.intent.category.LAUNCHER" />
+31-->/Users/CYANG/Desktop/project-lions/Cookbook/app/src/main/AndroidManifest.xml:17:17-77
+31-->/Users/CYANG/Desktop/project-lions/Cookbook/app/src/main/AndroidManifest.xml:17:27-74
+32            </intent-filter>
+33        </activity>
+34        <activity android:name="com.lions.cookbook.CookBookActivity" />
+34-->/Users/CYANG/Desktop/project-lions/Cookbook/app/src/main/AndroidManifest.xml:20:9-54
+34-->/Users/CYANG/Desktop/project-lions/Cookbook/app/src/main/AndroidManifest.xml:20:19-51
+35        <activity android:name="com.lions.cookbook.ViewRecipeActivity" />
+35-->/Users/CYANG/Desktop/project-lions/Cookbook/app/src/main/AndroidManifest.xml:21:9-56
+35-->/Users/CYANG/Desktop/project-lions/Cookbook/app/src/main/AndroidManifest.xml:21:19-53
+36        <activity android:name="com.lions.cookbook.CreateAccountActivity" />
+36-->/Users/CYANG/Desktop/project-lions/Cookbook/app/src/main/AndroidManifest.xml:22:9-59
+36-->/Users/CYANG/Desktop/project-lions/Cookbook/app/src/main/AndroidManifest.xml:22:19-56
+37        <activity android:name="com.lions.cookbook.CreateRecipeActivity" />
+37-->/Users/CYANG/Desktop/project-lions/Cookbook/app/src/main/AndroidManifest.xml:23:9-58
+37-->/Users/CYANG/Desktop/project-lions/Cookbook/app/src/main/AndroidManifest.xml:23:19-55
+38
+39        <meta-data
+39-->/Users/CYANG/Desktop/project-lions/Cookbook/app/src/main/AndroidManifest.xml:25:9-27:57
+40            android:name="preloaded_fonts"
+40-->/Users/CYANG/Desktop/project-lions/Cookbook/app/src/main/AndroidManifest.xml:26:13-43
+41            android:resource="@array/preloaded_fonts" />
+41-->/Users/CYANG/Desktop/project-lions/Cookbook/app/src/main/AndroidManifest.xml:27:13-54
+42
+43        <activity
+43-->[com.google.firebase:firebase-auth:17.0.0] /Users/CYANG/.gradle/caches/transforms-2/files-2.1/12bef4372478e183c94a8312d7464a3d/jetified-firebase-auth-17.0.0/AndroidManifest.xml:24:9-31:50
+44            android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
+44-->[com.google.firebase:firebase-auth:17.0.0] /Users/CYANG/.gradle/caches/transforms-2/files-2.1/12bef4372478e183c94a8312d7464a3d/jetified-firebase-auth-17.0.0/AndroidManifest.xml:25:13-85
+45            android:excludeFromRecents="true"
+45-->[com.google.firebase:firebase-auth:17.0.0] /Users/CYANG/.gradle/caches/transforms-2/files-2.1/12bef4372478e183c94a8312d7464a3d/jetified-firebase-auth-17.0.0/AndroidManifest.xml:26:13-46
+46            android:exported="true"
+46-->[com.google.firebase:firebase-auth:17.0.0] /Users/CYANG/.gradle/caches/transforms-2/files-2.1/12bef4372478e183c94a8312d7464a3d/jetified-firebase-auth-17.0.0/AndroidManifest.xml:27:13-36
+47            android:launchMode="singleTask"
+47-->[com.google.firebase:firebase-auth:17.0.0] /Users/CYANG/.gradle/caches/transforms-2/files-2.1/12bef4372478e183c94a8312d7464a3d/jetified-firebase-auth-17.0.0/AndroidManifest.xml:28:13-44
+48            android:permission="com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN"
+48-->[com.google.firebase:firebase-auth:17.0.0] /Users/CYANG/.gradle/caches/transforms-2/files-2.1/12bef4372478e183c94a8312d7464a3d/jetified-firebase-auth-17.0.0/AndroidManifest.xml:29:13-102
+49            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+49-->[com.google.firebase:firebase-auth:17.0.0] /Users/CYANG/.gradle/caches/transforms-2/files-2.1/12bef4372478e183c94a8312d7464a3d/jetified-firebase-auth-17.0.0/AndroidManifest.xml:30:13-72
+50
+51        <service
+51-->[com.google.firebase:firebase-auth:17.0.0] /Users/CYANG/.gradle/caches/transforms-2/files-2.1/12bef4372478e183c94a8312d7464a3d/jetified-firebase-auth-17.0.0/AndroidManifest.xml:33:9-39:19
+52            android:name="com.google.firebase.components.ComponentDiscoveryService"
+52-->[com.google.firebase:firebase-auth:17.0.0] /Users/CYANG/.gradle/caches/transforms-2/files-2.1/12bef4372478e183c94a8312d7464a3d/jetified-firebase-auth-17.0.0/AndroidManifest.xml:34:13-84
+53            android:directBootAware="true"
+53-->[com.google.firebase:firebase-common:19.3.0] /Users/CYANG/.gradle/caches/transforms-2/files-2.1/f7d6c862530c0131d86f945f017cdf21/jetified-firebase-common-19.3.0/AndroidManifest.xml:34:13-43
+54            android:exported="false" >
+54-->[com.google.firebase:firebase-auth:17.0.0] /Users/CYANG/.gradle/caches/transforms-2/files-2.1/12bef4372478e183c94a8312d7464a3d/jetified-firebase-auth-17.0.0/AndroidManifest.xml:35:13-37
+55            <meta-data
+55-->[com.google.firebase:firebase-auth:17.0.0] /Users/CYANG/.gradle/caches/transforms-2/files-2.1/12bef4372478e183c94a8312d7464a3d/jetified-firebase-auth-17.0.0/AndroidManifest.xml:36:13-38:85
+56                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+56-->[com.google.firebase:firebase-auth:17.0.0] /Users/CYANG/.gradle/caches/transforms-2/files-2.1/12bef4372478e183c94a8312d7464a3d/jetified-firebase-auth-17.0.0/AndroidManifest.xml:37:17-109
+57                android:value="com.google.firebase.components.ComponentRegistrar" />
+57-->[com.google.firebase:firebase-auth:17.0.0] /Users/CYANG/.gradle/caches/transforms-2/files-2.1/12bef4372478e183c94a8312d7464a3d/jetified-firebase-auth-17.0.0/AndroidManifest.xml:38:17-82
+58            <meta-data
+58-->[com.google.firebase:firebase-database:19.2.1] /Users/CYANG/.gradle/caches/transforms-2/files-2.1/3bb9fab9565f3c13da1b0de3227d5105/firebase-database-19.2.1/AndroidManifest.xml:32:13-34:85
+59                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+59-->[com.google.firebase:firebase-database:19.2.1] /Users/CYANG/.gradle/caches/transforms-2/files-2.1/3bb9fab9565f3c13da1b0de3227d5105/firebase-database-19.2.1/AndroidManifest.xml:33:17-109
+60                android:value="com.google.firebase.components.ComponentRegistrar" />
+60-->[com.google.firebase:firebase-database:19.2.1] /Users/CYANG/.gradle/caches/transforms-2/files-2.1/3bb9fab9565f3c13da1b0de3227d5105/firebase-database-19.2.1/AndroidManifest.xml:34:17-82
+61        </service>
+62
+63        <activity
+63-->[com.google.android.gms:play-services-base:17.0.0] /Users/CYANG/.gradle/caches/transforms-2/files-2.1/503246db64dcbb120c121745b36c75fd/play-services-base-17.0.0/AndroidManifest.xml:23:9-26:75
+64            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+64-->[com.google.android.gms:play-services-base:17.0.0] /Users/CYANG/.gradle/caches/transforms-2/files-2.1/503246db64dcbb120c121745b36c75fd/play-services-base-17.0.0/AndroidManifest.xml:24:13-79
+65            android:exported="false"
+65-->[com.google.android.gms:play-services-base:17.0.0] /Users/CYANG/.gradle/caches/transforms-2/files-2.1/503246db64dcbb120c121745b36c75fd/play-services-base-17.0.0/AndroidManifest.xml:25:13-37
+66            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+66-->[com.google.android.gms:play-services-base:17.0.0] /Users/CYANG/.gradle/caches/transforms-2/files-2.1/503246db64dcbb120c121745b36c75fd/play-services-base-17.0.0/AndroidManifest.xml:26:13-72
+67
+68        <provider
+68-->[com.google.firebase:firebase-common:19.3.0] /Users/CYANG/.gradle/caches/transforms-2/files-2.1/f7d6c862530c0131d86f945f017cdf21/jetified-firebase-common-19.3.0/AndroidManifest.xml:26:9-30:39
+69            android:name="com.google.firebase.provider.FirebaseInitProvider"
+69-->[com.google.firebase:firebase-common:19.3.0] /Users/CYANG/.gradle/caches/transforms-2/files-2.1/f7d6c862530c0131d86f945f017cdf21/jetified-firebase-common-19.3.0/AndroidManifest.xml:27:13-77
+70            android:authorities="com.lions.cookbook.firebaseinitprovider"
+70-->[com.google.firebase:firebase-common:19.3.0] /Users/CYANG/.gradle/caches/transforms-2/files-2.1/f7d6c862530c0131d86f945f017cdf21/jetified-firebase-common-19.3.0/AndroidManifest.xml:28:13-72
+71            android:exported="false"
+71-->[com.google.firebase:firebase-common:19.3.0] /Users/CYANG/.gradle/caches/transforms-2/files-2.1/f7d6c862530c0131d86f945f017cdf21/jetified-firebase-common-19.3.0/AndroidManifest.xml:29:13-37
+72            android:initOrder="100" />
+72-->[com.google.firebase:firebase-common:19.3.0] /Users/CYANG/.gradle/caches/transforms-2/files-2.1/f7d6c862530c0131d86f945f017cdf21/jetified-firebase-common-19.3.0/AndroidManifest.xml:30:13-36
+73
+74        <meta-data
+74-->[com.google.android.gms:play-services-basement:17.0.0] /Users/CYANG/.gradle/caches/transforms-2/files-2.1/ccfca4b44f8da668b53c0ebe1789e9fb/jetified-play-services-basement-17.0.0/AndroidManifest.xml:23:9-25:69
+75            android:name="com.google.android.gms.version"
+75-->[com.google.android.gms:play-services-basement:17.0.0] /Users/CYANG/.gradle/caches/transforms-2/files-2.1/ccfca4b44f8da668b53c0ebe1789e9fb/jetified-play-services-basement-17.0.0/AndroidManifest.xml:24:13-58
+76            android:value="@integer/google_play_services_version" />
+76-->[com.google.android.gms:play-services-basement:17.0.0] /Users/CYANG/.gradle/caches/transforms-2/files-2.1/ccfca4b44f8da668b53c0ebe1789e9fb/jetified-play-services-basement-17.0.0/AndroidManifest.xml:25:13-66
+77    </application>
+78
+79</manifest>

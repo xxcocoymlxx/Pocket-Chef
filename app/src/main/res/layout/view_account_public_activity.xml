@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="presenter"
+            type = "com.lions.cookbook.PublicUserProfilePresent"/>
+    </data>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".PublicUserProfileActivity">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/NameLayout"
+                android:layout_gravity="center"
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_alignParentBottom="true">
+
+                <TextView
+                    android:id="@+id/firstName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_gravity="left"
+                    android:text="First Name"
+                    android:textColor="#4d4d4d"
+                    android:textSize="20dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/lastName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/firstName"
+                    android:layout_gravity="right"
+                    android:layout_marginEnd="40dp"
+                    android:layout_marginStart="10dp"
+                    android:text="Last Name"
+                    android:textColor="#4d4d4d"
+                    android:textSize="20dp"
+                    android:textStyle="bold"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/usernameLayout"
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_alignParentBottom="true">
+
+                <TextView
+                    android:id="@+id/usernameAt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginTop="5dp"
+                    android:text="\@ "
+                    android:textColor="@color/colorBlue"
+                    android:textSize="15dp"
+                    android:layout_alignParentLeft="true"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginEnd="40dp"
+                    android:layout_marginTop="5dp"
+                    android:text="username"
+                    android:textColor="@color/colorBlue"
+                    android:layout_toRightOf="@+id/usernameAt"
+                    android:textSize="15dp"
+                    android:textStyle="bold"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/ButtonLayout"
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:layout_alignParentBottom="true">
+
+                <Button
+                    android:id="@+id/dietaryBtn"
+                    android:background="@drawable/acct_button_frame"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:drawableLeft="@drawable/ic_acct_following"
+                    android:layout_marginStart="75dp"
+                    android:paddingLeft="9dp"/>
+
+                <Button
+                    android:id="@+id/followingBtn"
+                    android:background="@drawable/acct_button_frame"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:drawableLeft="@drawable/ic_acct_followers"
+                    android:layout_toRightOf="@id/dietaryBtn"
+                    android:layout_marginStart="20dp"
+                    android:paddingLeft="13dp"
+                    />
+
+                <Button
+                    android:id="@+id/followersBtn"
+                    android:background="@drawable/acct_button_frame"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:drawableLeft="@drawable/ic_acct_follow"
+                    android:layout_toRightOf="@id/followingBtn"
+                    android:layout_marginStart="20dp"
+                    android:paddingLeft="9dp"
+                    />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:background="@drawable/img_my_recipes"
+                android:layout_marginStart="40dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"/>
+
+            <ListView
+                android:id="@+id/steps"
+                android:layout_width="350dp"
+                android:layout_gravity="center"
+                android:layout_height="385dp"
+                android:layout_centerInParent="true"
+                android:layout_centerHorizontal="true">
+            </ListView>
+
+        </LinearLayout>
+
+        <!--NAVIGATION BAR AT THE BOTTOM-->
+        <FrameLayout
+            android:id="@+id/navBar"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_alignParentBottom="true">
+            <!-- Main content -->
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                app:itemIconSize="35dp"
+                android:id="@+id/bottom_navigation"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_gravity="bottom"
+                android:background="#4d4d4d"
+                app:itemIconTint="#ffffff"
+                app:itemTextColor="#ffffff"
+                app:labelVisibilityMode="unlabeled"
+                app:menu="@menu/bottom_navigation_menu" />
+        </FrameLayout>
+    </RelativeLayout>
+</layout>

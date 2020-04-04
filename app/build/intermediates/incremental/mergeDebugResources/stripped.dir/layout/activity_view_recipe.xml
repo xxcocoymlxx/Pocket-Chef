@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                  
+                                                        
+
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewRecipeActivity" android:tag="layout/activity_view_recipe_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools" xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView android:layout_marginTop="10dp"
+        android:layout_marginBottom="45dp"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/scrollView">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <!--       Recipe Title-->
+            <TextView
+                android:id="@+id/RecipeTitle"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="5dp"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:text="Insert Recipe Title Here">
+            </TextView>
+
+            <LinearLayout
+                android:id="@+id/authorIndication"
+                android:layout_width="340dp"
+                android:layout_gravity="center"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:layout_alignParentBottom="true">
+
+                <TextView
+                    android:id="@+id/by"
+                    android:layout_width="25dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorText"
+                    android:text="By:"/>
+
+                <Button
+                    android:id="@+id/RecipeAuthor"
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_toRightOf="@+id/by"
+                    android:text="username"
+                    android:background="#00FFFFFF"
+                    android:textSize="13dp"
+                    android:textColor="@color/colorBlue"
+                    android:textStyle="bold"
+                    />
+            </LinearLayout>
+
+            <!--  Info about Publishing  -->
+            <TextView
+                android:id="@+id/publishNotes"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="3dp"
+                android:text="Toggle this button if you would like your recipe to be public or private. You can change this at any time!"
+                android:textColor="#787878"
+                android:textSize="15dp"
+                android:textAlignment="center"/>
+
+            <!--  Toggle Switch for Publishing Choice  -->
+            <Switch
+                android:id="@+id/publishSwitch"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="7dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="left"
+                android:scaleX="1.1"
+                android:scaleY="1.1"
+                android:text="Publish this recipe?"
+                android:textColor="@color/colorText"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:theme="@style/SwitchTheme" />
+
+            <!--   Recipe Serving Size-->
+            <RelativeLayout
+                android:id="@+id/ServingSizeLayout"
+                android:layout_width="370dp"
+                android:layout_gravity="center"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/text_frame"
+                android:layout_alignParentBottom="true">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_toLeftOf="@+id/Recommended"
+                    android:backgroundTint="@color/colorGreen"
+                    android:background="@drawable/view_recipe_serving_size"
+                    />
+
+                <TextView
+                    android:id="@+id/Recommended"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_margin="5dp"
+                    android:text="Recommended Serving Size:"
+                    android:layout_toLeftOf="@id/ServingSize"
+                    android:textColor="#4d4d4d"
+                    android:textSize="18dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/ServingSize"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="right"
+                    android:layout_marginEnd="60dp"
+                    android:layout_marginTop="5dp"
+                    android:text="2"
+                    android:textColor="#4d4d4d"
+                    android:textSize="18dp"
+                    android:textStyle="bold"/>
+            </RelativeLayout>
+
+            <!--   Alter Recipe Serving Size  -->
+            <RelativeLayout
+                android:id="@+id/alterRecipeLayout"
+                android:layout_width="370dp"
+                android:layout_gravity="center"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/text_frame"
+                android:layout_alignParentBottom="true">
+
+                <EditText
+                    android:id="@+id/newServingSize"
+                    android:layout_width="145dp"
+                    android:layout_height="match_parent"
+                    android:inputType="text"
+                    android:layout_marginStart="5dp"
+                    android:background="@drawable/text_frame"
+                    android:hint="Change Serving Size"
+                    android:textColorHint="#4d4d4d"
+                    android:textSize="15dp"
+                    android:textStyle="bold"/>
+
+                <Spinner
+                    android:id="@+id/newMeasurementTypes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_toLeftOf="@+id/btnAlterRecipe"
+                    android:entries="@array/measurement_type" />
+
+                <Button
+                    android:id="@+id/btnAlterRecipe"
+                    android:layout_width="80dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginEnd="10dp"
+                    android:backgroundTint="@color/colorGreen"
+                    android:textSize="13dp"
+                    android:text="Alter"
+                    android:textColor="#FFFFFF"
+                    />
+            </RelativeLayout>
+
+            <!--  Header for Ingredients and Amounts List  -->
+            <RelativeLayout
+                android:id="@+id/ingredientLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentBottom="true">
+
+                <TextView
+                    android:id="@+id/IngredientText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_gravity="left"
+                    android:layout_marginStart="40dp"
+                    android:text="Ingredients"
+                    android:textColor="#4d4d4d"
+                    android:textSize="18dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/AmtText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="right"
+                    android:layout_marginEnd="40dp"
+                    android:text="Amount/Weight"
+                    android:textColor="#4d4d4d"
+                    android:textSize="18dp"
+                    android:textStyle="bold"/>
+            </RelativeLayout>
+
+            <!--  List of all the Ingredients & Amounts  -->
+            <RelativeLayout
+                android:layout_width="370dp"
+                android:layout_gravity="center"
+                android:background="@drawable/text_frame"
+                android:layout_height="match_parent">
+
+                <ListView
+                    android:id="@+id/ingredients"
+                    android:layout_width="350dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center">
+                </ListView>
+            </RelativeLayout>
+
+            <!--  Header of the Steps List  -->
+            <TextView
+                android:id="@+id/StepsText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_gravity="left"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="15dp"
+                android:text="Steps"
+                android:textColor="#4d4d4d"
+                android:textSize="18dp"
+                android:textStyle="bold"/>
+
+            <!--  List of all Steps  -->
+            <RelativeLayout
+                android:layout_width="370dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@drawable/text_frame">
+                <ListView
+                    android:id="@+id/steps"
+                    android:layout_width="350dp"
+                    android:layout_gravity="center"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:layout_centerHorizontal="true">
+                </ListView>
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btnDeleteRecipe"
+                android:layout_width="330dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:layout_gravity="center"
+                android:textAllCaps="true"
+                android:textColor="#FFFFFF"
+                android:textSize="18dp"
+                android:backgroundTint="#DF5252"
+                android:text="DELETE RECIPE"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- NAVIGATION BAR AT THE BOTTOM -->
+    <FrameLayout
+        android:id="@+id/navBar"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true">
+        <!-- Main content -->
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            app:itemIconSize="30dp"
+            android:id="@+id/bottom_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_gravity="bottom"
+            android:background="#4d4d4d"
+            app:itemIconTint="#ffffff"
+            app:itemTextColor="#ffffff"
+            app:labelVisibilityMode="unlabeled"
+            app:menu="@menu/bottom_navigation_menu" />
+    </FrameLayout>
+
+</RelativeLayout>
+         

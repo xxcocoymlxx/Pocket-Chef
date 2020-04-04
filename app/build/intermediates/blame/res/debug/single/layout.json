@@ -1,0 +1,30 @@
+[
+    {
+        "merged": "/Users/CYANG/Desktop/project-lions/Cookbook/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/create_account_activity.xml",
+        "source": "/Users/CYANG/Desktop/project-lions/Cookbook/app/src/main/res/layout/create_account_activity.xml"
+    },
+    {
+        "merged": "/Users/CYANG/Desktop/project-lions/Cookbook/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/view_account_public_activity.xml",
+        "source": "/Users/CYANG/Desktop/project-lions/Cookbook/app/src/main/res/layout/view_account_public_activity.xml"
+    },
+    {
+        "merged": "/Users/CYANG/Desktop/project-lions/Cookbook/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/login_activity.xml",
+        "source": "/Users/CYANG/Desktop/project-lions/Cookbook/app/src/main/res/layout/login_activity.xml"
+    },
+    {
+        "merged": "/Users/CYANG/Desktop/project-lions/Cookbook/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/create_recipe_activity.xml",
+        "source": "/Users/CYANG/Desktop/project-lions/Cookbook/app/src/main/res/layout/create_recipe_activity.xml"
+    },
+    {
+        "merged": "/Users/CYANG/Desktop/project-lions/Cookbook/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/cook_book_activity.xml",
+        "source": "/Users/CYANG/Desktop/project-lions/Cookbook/app/src/main/res/layout/cook_book_activity.xml"
+    },
+    {
+        "merged": "/Users/CYANG/Desktop/project-lions/Cookbook/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/view_account_private_activity.xml",
+        "source": "/Users/CYANG/Desktop/project-lions/Cookbook/app/src/main/res/layout/view_account_private_activity.xml"
+    },
+    {
+        "merged": "/Users/CYANG/Desktop/project-lions/Cookbook/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_view_recipe.xml",
+        "source": "/Users/CYANG/Desktop/project-lions/Cookbook/app/src/main/res/layout/activity_view_recipe.xml"
+    }
+]
